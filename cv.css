@@ -1,0 +1,173 @@
+
+@media print {
+    body {
+        margin: 5%;
+    }
+    #avatar {
+        display: none;
+    }
+}
+
+@media screen {
+    #qrcode {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        margin: 5%;
+    }
+}
+
+
+@media screen and (min-width: 800px) {
+    body {
+        margin: 5% 15%;
+    }
+}
+
+body {
+    font-family: optima, helvetica;
+}
+
+h1, h2 {
+    border-bottom: 1px solid black;
+    text-transform: capitalize;
+}
+
+.warning {
+    color: crimson;
+    text-align: center;
+}
+
+.phone:before {
+    content: url(icons/phone-alt-solid.svg);
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.email:before {
+    content: url(icons/envelope-solid.svg);
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.linkedin:before {
+    content: url(icons/linkedin-brands.svg);
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.github:before {
+    content: url(icons/github-brands.svg);
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.githubio:before {
+    content: url(icons/info-circle-solid.svg);
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.location:before {
+    content: url(icons/map-marker-alt-solid.svg);
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+}
+
+#qrcode > img {
+    height: 100px;
+    width: 100px;
+}
+
+#avatar > img {
+    height: 150px;
+    width: 150px;
+}
+
+#skill-list {
+    background-color: LightGrey;
+}
+
+#info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+em {
+    font-weight: bold;
+}
+
+#skills {
+    font-family: courier;
+}
+
+#skills h3 {
+    text-transform: uppercase;
+}
+
+#skills ul {
+    padding: 0;
+}
+
+#skills li {
+    list-style-type: square;
+    margin: 10px;
+}
+
+#info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+}
+
+#info > div {
+    margin: 0% 2%;
+}
+
+#skill-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#skill-list > section {
+    margin: 0% 1%;
+}
+
+.job li {
+    list-style-type: "▹ ";
+    margin: 10px;
+}
+
+.job > header > p {
+    color: gray;
+}
+
+.job > header > h3 > .period {
+    color: gray;
+}
+
+.job > header > h3 > .period:before {
+    content: '(';
+}
+
+.job > header > h3 > .period:after {
+    content: ')';
+}
